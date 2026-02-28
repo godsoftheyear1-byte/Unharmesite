@@ -7,3 +7,13 @@ database.db
 *.md
 *.txt
 images/
+core/
+templates/
+SocialFish.py
+requirements.txt
+Dockerfile
+docker-compose.yml
+Procfile
+render.yaml
+vercel-old.json
+vercel-simple/

