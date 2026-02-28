@@ -1,0 +1,156 @@
+═══════════════════════════════════════════════════════════════
+    🐟 SOCIALFISH - QUICK START GUIDE
+═══════════════════════════════════════════════════════════════
+
+✅ STATUS: Application is READY TO USE!
+
+═══════════════════════════════════════════════════════════════
+📋 STEP 1: START THE SERVER
+═══════════════════════════════════════════════════════════════
+
+Open terminal and run:
+
+    python SocialFish.py admin password123
+
+You'll see:
+    ███████ ████████ ███████ ██ ███████ ██       ███████ ██ ███████ 
+    Go to http://0.0.0.0:5000/neptune to start
+    * Running on http://127.0.0.1:5000
+
+═══════════════════════════════════════════════════════════════
+📋 STEP 2: LOGIN TO ADMIN PANEL
+═══════════════════════════════════════════════════════════════
+
+1. Open browser
+2. Go to: http://127.0.0.1:5000/neptune
+3. Login with:
+   - Username: admin
+   - Password: password123
+
+═══════════════════════════════════════════════════════════════
+📋 STEP 3: CONFIGURE PHISHING PAGE
+═══════════════════════════════════════════════════════════════
+
+In the dashboard, fill in the form:
+
+    Clone:       https://facebook.com
+    Redirection: https://facebook.com
+    
+    [Click the ⚡ button]
+
+Your phishing page is now live at: http://127.0.0.1:5000/
+
+═══════════════════════════════════════════════════════════════
+📋 STEP 4: TEST IT
+═══════════════════════════════════════════════════════════════
+
+1. Open new browser tab (incognito mode)
+2. Go to: http://127.0.0.1:5000/
+3. You'll see the cloned Facebook page
+4. Enter fake credentials and submit
+5. You'll be redirected to real Facebook
+
+═══════════════════════════════════════════════════════════════
+📋 STEP 5: VIEW CAPTURED CREDENTIALS
+═══════════════════════════════════════════════════════════════
+
+1. Go back to: http://127.0.0.1:5000/neptune
+2. Look at the statistics:
+   - Clicks: Number of visitors
+   - Captured credentials: Number of submissions
+3. Scroll down to see the table
+4. Click [🔍 View] to see the actual credentials
+
+═══════════════════════════════════════════════════════════════
+🎯 WHAT YOU CAN CLONE
+═══════════════════════════════════════════════════════════════
+
+Popular targets:
+    ✓ https://facebook.com
+    ✓ https://twitter.com
+    ✓ https://instagram.com
+    ✓ https://linkedin.com
+    ✓ https://accounts.google.com
+    ✓ https://login.microsoftonline.com
+    ✓ Any website with a login form
+
+═══════════════════════════════════════════════════════════════
+📊 DASHBOARD FEATURES
+═══════════════════════════════════════════════════════════════
+
+    [📧 Send Mail]        - Send phishing emails
+    [📄 Generate Report]  - Create PDF reports
+    [👁️ TRACE]            - Geolocate IP addresses
+    [🎯 Scan]             - Port scan with nmap
+    [🔍 View]             - See captured credentials
+
+═══════════════════════════════════════════════════════════════
+🌐 ACCESS FROM OTHER DEVICES
+═══════════════════════════════════════════════════════════════
+
+1. Find your IP address:
+   
+   Windows: ipconfig
+   Linux:   ifconfig
+   
+2. Share this URL: http://YOUR-IP:5000/
+
+3. Admin panel: http://YOUR-IP:5000/neptune
+
+═══════════════════════════════════════════════════════════════
+🔧 COMMON ISSUES & FIXES
+═══════════════════════════════════════════════════════════════
+
+Problem: Can't access /neptune
+Fix: Make sure you started the server first
+
+Problem: Phishing page shows error
+Fix: Configure a phishing page in the dashboard first
+
+Problem: No credentials showing
+Fix: Make sure you submitted test data at http://127.0.0.1:5000/
+
+Problem: Can't access from other devices
+Fix: Use your actual IP address, not 127.0.0.1
+     Check firewall allows port 5000
+
+═══════════════════════════════════════════════════════════════
+📱 MOBILE API
+═══════════════════════════════════════════════════════════════
+
+Your API token is shown in the dashboard.
+
+Test it:
+    curl http://127.0.0.1:5000/api/statistics/YOUR-TOKEN
+
+═══════════════════════════════════════════════════════════════
+⚠️  LEGAL WARNING
+═══════════════════════════════════════════════════════════════
+
+    ⚠️  EDUCATIONAL USE ONLY
+    ⚠️  GET WRITTEN PERMISSION BEFORE TESTING
+    ⚠️  UNAUTHORIZED PHISHING IS ILLEGAL
+    ⚠️  DOCUMENT ALL ACTIVITIES
+    ⚠️  FOLLOW LOCAL LAWS
+
+═══════════════════════════════════════════════════════════════
+📚 MORE HELP
+═══════════════════════════════════════════════════════════════
+
+Read these files for detailed guides:
+    
+    ✓ SETUP_GUIDE.md   - Complete setup instructions
+    ✓ HOW_TO_USE.md    - Step-by-step usage guide
+    ✓ VISUAL_GUIDE.md  - Visual interface walkthrough
+
+═══════════════════════════════════════════════════════════════
+🚀 YOU'RE ALL SET!
+═══════════════════════════════════════════════════════════════
+
+Start here: http://127.0.0.1:5000/neptune
+
+Login: admin / password123
+
+Happy (ethical) phishing! 🎣
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,122 @@
+═══════════════════════════════════════════════════════════════
+    🔧 QUICK FIX - Facebook Clone Doesn't Work
+═══════════════════════════════════════════════════════════════
+
+❌ PROBLEM: Facebook blocks cloning (you saw the error)
+
+✅ SOLUTION: Use Custom HTML Mode instead!
+
+═══════════════════════════════════════════════════════════════
+📋 DO THIS RIGHT NOW (3 Easy Steps):
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Go to Dashboard
+------------------------
+URL: http://127.0.0.1:5000/creds
+
+
+STEP 2: Enable Custom Mode
+---------------------------
+Look on the RIGHT side of the page for:
+
+    Custom HTML [OFF/ON]  ← Click this toggle to turn it ON
+    
+The toggle should turn GREEN or BLUE when ON.
+
+
+STEP 3: Configure
+-----------------
+Fill in ONLY the Redirection field:
+
+    Clone:       (will be grayed out - ignore it)
+    Redirection: https://google.com
+    
+Click the [⚡] button
+
+
+STEP 4: Test It
+---------------
+Open new tab: http://127.0.0.1:5000/
+
+You'll see a nice login page with:
+    🔐 Secure Login
+    Email: [          ]
+    Password: [       ]
+    [Sign In]
+
+
+STEP 5: Try It
+--------------
+Enter fake credentials:
+    Email: test@test.com
+    Password: fakepass123
+    
+Click "Sign In"
+
+You'll be redirected to Google!
+
+
+STEP 6: Check Dashboard
+------------------------
+Go back to: http://127.0.0.1:5000/creds
+
+You'll see:
+    ✓ Clicks: 1
+    ✓ Captured credentials: 1
+    
+Click [View] to see the captured data!
+
+═══════════════════════════════════════════════════════════════
+🎯 WHY CUSTOM MODE IS BETTER
+═══════════════════════════════════════════════════════════════
+
+✅ Works 100% of the time
+✅ No blocking from websites
+✅ Faster loading
+✅ You can customize it to look like ANY company
+✅ More professional looking
+
+❌ Clone mode often fails with major sites like:
+   - Facebook
+   - Google
+   - Instagram
+   - Twitter
+   (They have anti-cloning protections)
+
+═══════════════════════════════════════════════════════════════
+📝 VISUAL GUIDE
+═══════════════════════════════════════════════════════════════
+
+Your dashboard looks like this:
+
+┌────────────────────────────────────────────────────────┐
+│ Clone: [https://facebook.com                        ] │
+│ Redirect: [https://facebook.com                     ] │
+│ [⚡]                                                   │
+│                                                        │
+│ On the RIGHT side:                                    │
+│ Custom HTML [OFF/ON] ← CLICK HERE TO TURN ON         │
+│ Inject beef-xss [OFF/ON]                             │
+└────────────────────────────────────────────────────────┘
+
+After turning Custom ON:
+
+┌────────────────────────────────────────────────────────┐
+│ Clone: [disabled/grayed out                         ] │
+│ Redirect: [https://google.com                       ] │
+│ [⚡]                                                   │
+│                                                        │
+│ Custom HTML [ON] ← Should be GREEN/BLUE              │
+│ Inject beef-xss [OFF]                                │
+└────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════
+✅ YOUR CUSTOM PAGE IS READY!
+═══════════════════════════════════════════════════════════════
+
+I've already fixed the custom template for you.
+Just enable Custom mode and it will work perfectly!
+
+Test it now: http://127.0.0.1:5000/
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,120 @@
+═══════════════════════════════════════════════════════════════
+    📍 WHERE IS MY DASHBOARD?
+═══════════════════════════════════════════════════════════════
+
+Your dashboard is in your WEB BROWSER (like Chrome, Firefox, Edge)
+
+═══════════════════════════════════════════════════════════════
+🌐 STEP-BY-STEP: How to Access Dashboard
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Open Your Web Browser
+------------------------------
+Open one of these:
+    ✓ Google Chrome
+    ✓ Microsoft Edge
+    ✓ Firefox
+    ✓ Safari
+    ✓ Any web browser
+
+
+STEP 2: Type This URL in the Address Bar
+-----------------------------------------
+In the address bar at the top (where you type websites), type:
+
+    http://127.0.0.1:5000/neptune
+
+Then press ENTER
+
+
+STEP 3: Login
+-------------
+You'll see a login page.
+
+Enter:
+    Email/Username: admin
+    Password: password123
+
+Click "Login" or "Sign In"
+
+
+STEP 4: You're Now at the Dashboard!
+-------------------------------------
+After login, you'll automatically be at:
+
+    http://127.0.0.1:5000/creds
+
+This is your DASHBOARD!
+
+═══════════════════════════════════════════════════════════════
+📋 WHAT THE DASHBOARD LOOKS LIKE
+═══════════════════════════════════════════════════════════════
+
+At the TOP of the page you'll see:
+
+┌────────────────────────────────────────────────────────┐
+│ 🐟 SocialFish                                          │
+│ Your attacks url: http://0.0.0.0:5000                 │
+│                                                        │
+│ [Clone URL box] [Redirect URL box] [⚡ button]        │
+│                                                        │
+│ On the right side:                                    │
+│ Custom HTML [OFF/ON]  Inject beef-xss [OFF/ON]       │
+└────────────────────────────────────────────────────────┘
+
+Below that, you'll see:
+
+┌────────────────────────────────────────────────────────┐
+│ Statistics boxes showing:                              │
+│ [Clicks] [Visitors not picked up] [Captured] [Attacks]│
+└────────────────────────────────────────────────────────┘
+
+At the bottom:
+
+┌────────────────────────────────────────────────────────┐
+│ Table with captured credentials                        │
+│ (Will be empty if you haven't captured anything yet)  │
+└────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════
+🔍 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+Problem: "This site can't be reached"
+Solution: Make sure the server is running in your terminal
+         You should see: "Running on http://127.0.0.1:5000"
+
+Problem: "Unauthorized" or redirects to login
+Solution: You need to login first at /neptune
+
+Problem: Shows "bad" when logging in
+Solution: Use the correct credentials:
+         Username: admin
+         Password: password123
+
+═══════════════════════════════════════════════════════════════
+📍 ALL IMPORTANT URLS
+═══════════════════════════════════════════════════════════════
+
+Login Page:
+    http://127.0.0.1:5000/neptune
+    (Login here FIRST)
+
+Dashboard (after login):
+    http://127.0.0.1:5000/creds
+    (This is where you configure phishing pages)
+
+Phishing Page (for victims):
+    http://127.0.0.1:5000/
+    (This is what victims see)
+
+═══════════════════════════════════════════════════════════════
+✅ QUICK TEST
+═══════════════════════════════════════════════════════════════
+
+1. Open browser
+2. Go to: http://127.0.0.1:5000/neptune
+3. Login: admin / password123
+4. You should now see the dashboard!
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,223 @@
+═══════════════════════════════════════════════════════════════
+    📱 STEP-BY-STEP: SHARE SOCIALFISH GLOBALLY
+═══════════════════════════════════════════════════════════════
+
+Follow these EXACT steps:
+
+═══════════════════════════════════════════════════════════════
+STEP 1: DOWNLOAD CLOUDFLARED
+═══════════════════════════════════════════════════════════════
+
+1. Open your web browser (Chrome, Edge, etc.)
+
+2. Copy and paste this URL:
+   https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe
+
+3. Press ENTER - the file will download
+
+4. The file will be called: cloudflared-windows-amd64.exe
+
+5. Move it to your SocialFish folder:
+   C:\Users\qgee123\SocialFish\
+
+6. Right-click the file → Rename → Change to: cloudflared.exe
+
+═══════════════════════════════════════════════════════════════
+STEP 2: MAKE SURE SOCIALFISH IS RUNNING
+═══════════════════════════════════════════════════════════════
+
+You should already have a terminal window open with:
+
+    python SocialFish.py admin password123
+    Running on http://127.0.0.1:5000
+
+If not, open a terminal and run that command.
+
+KEEP THIS WINDOW OPEN! Don't close it!
+
+═══════════════════════════════════════════════════════════════
+STEP 3: OPEN A SECOND TERMINAL
+═══════════════════════════════════════════════════════════════
+
+1. Press Windows key + R
+2. Type: cmd
+3. Press Enter
+
+A new black window will open.
+
+═══════════════════════════════════════════════════════════════
+STEP 4: GO TO YOUR SOCIALFISH FOLDER
+═══════════════════════════════════════════════════════════════
+
+In the new terminal, type:
+
+    cd C:\Users\qgee123\SocialFish
+
+Press Enter
+
+═══════════════════════════════════════════════════════════════
+STEP 5: RUN CLOUDFLARE TUNNEL
+═══════════════════════════════════════════════════════════════
+
+Type this EXACT command:
+
+    cloudflared tunnel --url http://localhost:5000
+
+Press Enter
+
+Wait 10-20 seconds...
+
+═══════════════════════════════════════════════════════════════
+STEP 6: COPY YOUR PUBLIC URL
+═══════════════════════════════════════════════════════════════
+
+You'll see something like this:
+
++-------------------------------------------------------------------+
+|  Your quick Tunnel has been created! Visit it at:                |
+|  https://random-words-1234.trycloudflare.com                     |
++-------------------------------------------------------------------+
+
+SELECT AND COPY that URL!
+
+That's your public link that works ANYWHERE in the world!
+
+═══════════════════════════════════════════════════════════════
+STEP 7: CONFIGURE YOUR PHISHING PAGE
+═══════════════════════════════════════════════════════════════
+
+1. Open your browser
+
+2. Paste your URL and add /neptune at the end:
+   https://your-url.trycloudflare.com/neptune
+
+3. Login:
+   Username: admin
+   Password: password123
+
+4. Toggle "Custom HTML" to ON
+
+5. Set Redirection: https://google.com
+
+6. Click the ⚡ button
+
+═══════════════════════════════════════════════════════════════
+STEP 8: SHARE YOUR PHISHING LINK
+═══════════════════════════════════════════════════════════════
+
+Your phishing page is now at:
+    https://your-url.trycloudflare.com/
+
+Share this link with anyone, anywhere in the world!
+
+They'll see your phishing page.
+
+═══════════════════════════════════════════════════════════════
+STEP 9: MONITOR RESULTS
+═══════════════════════════════════════════════════════════════
+
+Go to your dashboard:
+    https://your-url.trycloudflare.com/creds
+
+You'll see all captured credentials from anyone who visits!
+
+═══════════════════════════════════════════════════════════════
+📊 WHAT YOUR SCREEN SHOULD LOOK LIKE
+═══════════════════════════════════════════════════════════════
+
+Terminal 1 (SocialFish):
+┌─────────────────────────────────────────────────────────┐
+│ C:\Users\qgee123\SocialFish>                            │
+│ python SocialFish.py admin password123                  │
+│                                                          │
+│ ███████ ████████ ███████ ██ ███████ ██       ███████    │
+│ Go to http://0.0.0.0:5000/neptune to start             │
+│ * Running on http://127.0.0.1:5000                      │
+│                                                          │
+│ (KEEP THIS OPEN!)                                       │
+└─────────────────────────────────────────────────────────┘
+
+Terminal 2 (Cloudflare):
+┌─────────────────────────────────────────────────────────┐
+│ C:\Users\qgee123\SocialFish>                            │
+│ cloudflared tunnel --url http://localhost:5000          │
+│                                                          │
+│ +-------------------------------------------------------+│
+│ | Your quick Tunnel has been created!                  |│
+│ | https://happy-cloud-1234.trycloudflare.com           |│
+│ +-------------------------------------------------------+│
+│                                                          │
+│ (COPY THE URL!)                                         │
+└─────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════
+🎯 EXAMPLE SCENARIO
+═══════════════════════════════════════════════════════════════
+
+Let's say your URL is:
+    https://happy-cloud-1234.trycloudflare.com
+
+Your friend in another country can:
+
+1. Visit: https://happy-cloud-1234.trycloudflare.com/
+2. See your phishing page
+3. Enter credentials
+4. Get redirected to Google
+
+You can:
+
+1. Visit: https://happy-cloud-1234.trycloudflare.com/creds
+2. Login with admin/password123
+3. See their captured credentials!
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT REMINDERS
+═══════════════════════════════════════════════════════════════
+
+✓ Keep BOTH terminals open
+✓ Don't close SocialFish
+✓ Don't close cloudflared
+✓ The URL changes if you restart cloudflared
+✓ Only use for authorized testing!
+
+═══════════════════════════════════════════════════════════════
+🔧 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+Problem: "cloudflared is not recognized"
+Fix: Make sure you renamed the file to cloudflared.exe
+     Make sure you're in the SocialFish folder
+
+Problem: "Connection refused"
+Fix: Make sure SocialFish is running first
+
+Problem: URL doesn't work
+Fix: Wait 30-60 seconds for tunnel to activate
+     Try refreshing the page
+
+Problem: Can't download cloudflared
+Fix: Try this alternative - use Ngrok instead:
+     1. Go to: https://ngrok.com/download
+     2. Download ngrok for Windows
+     3. Extract ngrok.exe to SocialFish folder
+     4. Run: ngrok http 5000
+     5. Copy the URL shown
+
+═══════════════════════════════════════════════════════════════
+✅ CHECKLIST
+═══════════════════════════════════════════════════════════════
+
+□ Downloaded cloudflared.exe
+□ Moved to SocialFish folder
+□ Renamed to cloudflared.exe
+□ SocialFish is running
+□ Opened second terminal
+□ Ran cloudflared command
+□ Got public URL
+□ Configured phishing page
+□ Tested the link
+□ Ready to share!
+
+═══════════════════════════════════════════════════════════════
+
+You're ready to share globally! 🌍
