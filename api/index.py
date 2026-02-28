@@ -9,16 +9,23 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault('SF_USER', 'admin')
 os.environ.setdefault('SF_PASS', 'password123')
 
-# Mock argv for SocialFish
-sys.argv = ['SocialFish.py', os.environ.get('SF_USER', 'admin'), os.environ.get('SF_PASS', 'password123')]
+# Mock argv for SocialFish (empty to trigger env var mode)
+sys.argv = ['SocialFish.py']
+
+# Import after setting environment
+from core.config import DATABASE
+from core.dbsf import initDB
+from core.cleanFake import cleanFake
+
+# Initialize database
+try:
+    cleanFake()
+    initDB(DATABASE)
+except:
+    pass
 
 # Import the Flask app
 from SocialFish import app
 
-# Vercel handler
-def handler(request, response):
-    return app(request, response)
-
-# For local testing
-if __name__ == "__main__":
-    app.run(debug=True)
+# Export for Vercel
+app = app

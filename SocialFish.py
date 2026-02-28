@@ -19,16 +19,16 @@ import sqlite3
 import flask_login
 import os
 
-# Verificar argumentos
-if len(argv) < 2:
-    print("./SocialFish <youruser> <yourpassword>\n\ni.e.: ./SocialFish.py root pass")
-    exit(0)
-
-# Temporario
-try:
+# Verificar argumentos - support both CLI and environment variables
+if len(argv) >= 3:
+    # Traditional CLI mode
     users = {argv[1]: {'password': argv[2]}}
-except IndexError:
+elif os.environ.get('SF_USER') and os.environ.get('SF_PASS'):
+    # Vercel/serverless mode - use environment variables
+    users = {os.environ.get('SF_USER'): {'password': os.environ.get('SF_PASS')}}
+else:
     print("./SocialFish <youruser> <yourpassword>\n\ni.e.: ./SocialFish.py root pass")
+    print("Or set SF_USER and SF_PASS environment variables")
     exit(0)
 # Definicoes do flask
 app = Flask(__name__, static_url_path='',

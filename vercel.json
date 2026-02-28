@@ -14,6 +14,7 @@
   ],
   "env": {
     "SF_USER": "admin",
-    "SF_PASS": "password123"
+    "SF_PASS": "password123",
+    "VERCEL": "1"
   }
 }
