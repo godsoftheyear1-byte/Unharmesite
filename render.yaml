@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: socialfish
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python SocialFish.py admin password123
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SF_USER
+        value: admin
+      - key: SF_PASS
+        value: password123
