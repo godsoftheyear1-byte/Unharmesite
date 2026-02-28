@@ -1,0 +1,9 @@
+cloudflared.exe
+*.pyc
+__pycache__/
+.git/
+.vscode/
+database.db
+*.md
+*.txt
+images/
